@@ -11,6 +11,6 @@ The Perimeter function uses the simple formula P = n * l to output the Perimeter
 ### Area
 The Area function uses the formula A = 1/2 a * P where a is the apothem. The apothem is the distance from the midpoint of one side to the center of the shape. 
 
-##Test
+## Test
 
 Included is a test function runtests.jl, which check that the functions compute the correct area and perimeter of a square, a triangle, and a hexagon
