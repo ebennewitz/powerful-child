@@ -13,4 +13,4 @@ The Area function uses the formula A = 1/2 a * P where a is the apothem. The apo
 
 ## Test
 
-Included is a test function runtests.jl, which check that the functions compute the correct area and perimeter of a square, a triangle, and a hexagon
+Included is a test function runtests.jl, which check that the functions compute the correct area and perimeter of set shapes. We check the pacakge for a square, a triangle and a hexagon. I also included a large n test which checks if a 1e15 sided object has approximately the same area as a sphere. 
