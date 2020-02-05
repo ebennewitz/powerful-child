@@ -23,3 +23,9 @@ sq = RegPolygon(4,1)
 hex = RegPolygon(6,1)
 @test Perimeter(hex) == 6*hex.length
 @test isapprox( Area(hex) , 3 * sqrt(3) / 2 * hex.length^2, atol = tol )
+
+#Check large n limit --> circle
+cir = RegPolygon(Int(1e15), 1)
+r = Apothem(cir)
+@test isapprox( Perimeter(cir) , 2*pi*r , atol = tol)
+@test isapprox( Area(cir) , pi*r^2, atol = tol)

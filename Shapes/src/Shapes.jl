@@ -22,6 +22,11 @@ function Perimeter(s::RegPolygon{<:Integer, <:Real})
     s.sides * s.length
 end
 
+export Apothem
+function Apothem(s::RegPolygon{<:Integer, <:Real})
+    a = s.length / (2 * tan(pi/s.sides))
+end
+
 export Area
 function Area(s::RegPolygon{<:Integer, <:Real})
     p = Perimeter(s)                        #perimeter of shape
