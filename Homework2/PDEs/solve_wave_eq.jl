@@ -66,7 +66,7 @@ wave_evolution2, E_values2 = evolve_wave(f_2, dfdt_2, xs, t_steps, dt)
 print("Making animation")
 anim = @animate for i ∈ 1:100
     Dt = Integer(t_steps/100)
-    plot(xs, wave_evolution1[Dt*i], lw = 2, ylims = (-10*A,10*A), xlabel = "x", title = "Evolution of a wave");
+    plot(xs, wave_evolution1[Dt*i], lw = 2, ylims = (-A,A), xlabel = "x", title = "Evolution of a wave");
     plot!(xs, wave_evolution2[Dt*i], lw = 2);
 end
 
