@@ -56,10 +56,14 @@ dfdt(t, x) = 10*A*w*sin(k*x)*cos(w*t)
 f_2(t, x) = A*sin(2*k*x + w*t)
 dfdt_2(t, x) = A*w*cos(2*k*x + w*t)
 
+#============================================#
+#             Evolve functions               #
+#============================================#
 xs = [i/1000 for i in 0:1000]
 t_steps, dt = 100, 0.01
 wave_evolution1, E_values1 = evolve_wave(f, dfdt, xs, t_steps, dt)
 wave_evolution2, E_values2 = evolve_wave(f_2, dfdt_2, xs, t_steps, dt)
+
 #============================================#
 #    Plotting/Animating the solutions        #
 #============================================#
